@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "carpet-pnd-addition",
+	"version": "${version}",
+	"name": "Carpet-PND-Addition",
+	"description": "",
+	"authors": [
+		"Bexerlmao"
+	],
+	"contact": {
+		"sources": "https://github.com/GHS-Official/Carpet-PND-Addition"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/carpet-pnd-addition/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"pndserver.carpetpndaddition.ExampleMod"
+		],
+		"client": [
+			"pndserver.carpetpndaddition.ExampleModt"
+		]
+	},
+	"mixins": [
+		"Carpet-PND-Addition.mixins.json",
+		{
+			"config": "modid.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
